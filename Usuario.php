@@ -1,9 +1,9 @@
 <?php
 // Juan Marroquin 19845
 class Usuario{
-	private $nombre = "";
-	private $correo = "";
-	private $contrasena = "";
+	private $nombre;
+	private $correo;
+	private $contrasena;
 	// constructor usuario
 	function __construct($nombre,$correo ,$contrasena){
 		$this->nombre = $nombre;
