@@ -31,7 +31,12 @@ class Consulta{
 			
 			return $id1;
 	}
-	
+	public function insertarUsuario(){
+		$rs=mysql_query("INSERT INTO usuario VALUES(generarIDU(),$usuario->getNombre(),$usuario->getCorreo(),$usuario->getContrasena())",Conectar->getCn());
+	}
+	public function insertarPropuesta(){
+		$rs=mysql_query("INSERT INTO usuario VALUES(generarIDP,$usuario->getNombre(),$usuario->getCorreo(),$usuario->getContrasena())",Conectar->getCn());
+	}
 	public function seleccionarUsuario(){
 		$rs=mysql_query("SELECT * FROM usuario WHERE correo='".$usuario->getCorreo()."'",Conectar->getCn());
 		$result=mysql_fetch_array($rs);
@@ -55,6 +60,9 @@ class Consulta{
 	
 	public function modificarPropuesta(){
 		$rs=mysql_query("UPDATE propuesta SET nombre='"$propuesta->getNombre"', ods='"$propuesta->getODS"', detalles='"$propuesta->getDescripcion"', progreso="$propuesta->getProgreso"",Conectar->getCn());
+	}
+	public function modificarUsuario(){
+		$rs=mysql_query("UPDATE usuario SET nombre='"$nombre->getNombre"','"$correo->getCorreo"','"$contrasena->getContrasena"'");
 	}
 	
 	
