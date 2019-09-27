@@ -1,0 +1,35 @@
+body{
+background: -webkit-linear-gradient(left, #00B13A, white, #00B13A); /* For Safari 5.1 to 6.0 */
+}
+
+table{
+	width:100%;
+	height:100%;
+}
+p{
+	padding:3px;
+	text-align:center;
+	color:black;
+	font-family:Candara,Centuary,Corbel;
+	font-size:11pt;
+}
+#infoODS li{
+	font-family:Verdana, Helvetics, sans-serif;
+	font-size:30pt;
+	list-style-type:none;
+}
+#infoODS2 td{
+	font-size:25pt;
+}
+#infoODS2 li{
+	font-family:Verdana, Helvetics, sans-serif;
+	font-size:25pt;
+	display:block;
+}
+#infoODS2 p{
+	padding:3px;
+	color:#848484;
+	text-align:left;
+	font-family:Candara,Centuary,Corbel;
+	font-size:11pt;
+}
