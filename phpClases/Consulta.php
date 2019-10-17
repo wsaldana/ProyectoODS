@@ -2,16 +2,15 @@
 class Consulta{
 	private $usuario;
 	private $propuesta;
+	private $con;
 	
 	/*constructor con parametros*/
 	public function Consulta($usuario, $propuesta){
 			$this->usuario = $usuario;
 			$this->propuesta = $propuesta;
-			
-		}
-	/*constructor sin parametros*/
-	public function Consulta(){
-			
+			include("../phpClases/Conectar.php");	
+			$conexion=new Conectar();
+			$this->con=$conexion->getCn();
 		}
 		
 	public function generarIDU(){	
@@ -32,21 +31,22 @@ class Consulta{
 			return $id1;
 	}
 	public function insertarUsuario(){
-		$rs=mysql_query("INSERT INTO usuario VALUES(generarIDU(),$usuario->getNombre(),$usuario->getCorreo(),$usuario->getContrasena())",Conectar->getCn());
+		//$rs=mysql_query("INSERT INTO usuario VALUES(generarIDU(),$usuario->getNombre(),$usuario->getCorreo(),$usuario->getContrasena())",Conectar->getCn());
 	}
 	public function insertarPropuesta(){
-		$rs=mysql_query("INSERT INTO usuario VALUES(generarIDP,$usuario->getNombre(),$usuario->getCorreo(),$usuario->getContrasena())",Conectar->getCn());
+		//$rs=mysql_query("INSERT INTO usuario VALUES(generarIDP(),$usuario->getNombre(),$usuario->getCorreo(),$usuario->getContrasena())",Conectar->getCn());
 	}
 	public function seleccionarUsuario(){
-		$rs=mysql_query("SELECT * FROM usuario WHERE correo='".$usuario->getCorreo()."'",Conectar->getCn());
+		$cor=$this->usuario->getCorreo();
+		$rs=mysql_query("SELECT * FROM usuario WHERE correo='".$cor."'",$this->con);
 		$result=mysql_fetch_array($rs);
-		$usuario1=new Usuario();
+		$usuario1=new Usuario("","","");
 		$usuario1->setNombre($result[1]);
 		$usuario1->setCorreo($result[2]);
-		$usuario1->setContraseña($result[3]);
+		$usuario1->setContrasena($result[3]);
 		return $usuario1;
 	}
-	
+	/*
 	public function seleccionarPropuesta(){
 		$rs=mysql_query("SELECT * FROM propuestas WHERE nombre='".$propuesta->getNombre()."'",Conectar->getCn());
 		$result=mysql_fetch_array($rs);
@@ -64,7 +64,7 @@ class Consulta{
 	public function modificarUsuario(){
 		$rs=mysql_query("UPDATE usuario SET nombre='"$nombre->getNombre"','"$correo->getCorreo"','"$contrasena->getContrasena"'");
 	}
-	
+	*/
 	
 }
 ?>

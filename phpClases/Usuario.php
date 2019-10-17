@@ -11,7 +11,7 @@ class Usuario{
 		$this->contrasena = $contrasena;
 	}
 	// getters y setters de nombre
-	function setNombre($Nombre) {
+	function setNombre($nombre) {
 		$this->nombre = $nombre;
 	}
 	public function getNombre() {
@@ -22,14 +22,14 @@ class Usuario{
 		$this->correo = $correo;
 	}
 	public function getCorreo() {
-		return $correo;
+		return $this->correo;
 	}
 	// getters y setters de contrasena
 	function setContrasena($contrasena) {
 		$this->contrasena = $contrasena;
 	}
 	public function getContrasena() {
-		return $contrasena;
+		return $this->contrasena;
 	}
 }
 ?>
