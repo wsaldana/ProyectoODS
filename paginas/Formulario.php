@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="formulario.css">
+<link rel="stylesheet" type="text/css" href="../css/formulario.css">
 <body>
 
 <form action="ejemplo.php" method="get">
