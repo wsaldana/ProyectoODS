@@ -1,5 +1,5 @@
 <?php
-// Juan Marroquin 19845
+// Carlos Raxtum #19721
 class Propuesta{
 	private $nombre = "";
 	private $ods = "";
