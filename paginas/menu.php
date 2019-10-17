@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <link rel="stylesheet" href="../css/menucss.css">
+   <link rel="stylesheet" href="css/menucss.css">
    <title>Menu</title>
+   <meta charset="UTF-8"/>
 </head>
 <body>
 <table align="center" width="100%">
@@ -10,7 +11,7 @@
 <td width="12%">
 </td>
 <td>
-<img src="../imagenes/logo.jpg" height="100px" width="300px">
+<img src="imagenes/logo.jpg" height="100px" width="300px">
 </td>
 <td width="10%">
 </td>
@@ -18,11 +19,11 @@
 <div id='cssmenu'>
 <ul>
    <li class='active'><a href="principal.html" target="principal">Inicio</a></li>
-   <li><a href="nuevofuturo.html" target="principal">Login</a></li>
-   <li><a href="Informacion.html" target="principal">Información</a></li>
-   <li><a href="Datos.php" target="principal">Datos</a></li>
-   <li><a href="quienes.html" target="principal">&iquest;Quienes Somos?</a></li>
-   <li><a href="contacto.html" target="principal">Contacto</a></li>
+   <li><a href="paginas/nuevofuturo.html" target="principal">Login</a></li>
+   <li><a href="paginas/Informacion.html" target="principal">Información</a></li>
+   <li><a href="paginas/Datos.php" target="principal">Datos</a></li>
+   <li><a href="paginas/quienes.html" target="principal">&iquest;Quienes Somos?</a></li>
+   <li><a href="paginas/contacto.html" target="principal">Contacto</a></li>
 </ul>
 </div>
 </td>

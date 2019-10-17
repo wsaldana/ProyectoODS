@@ -1,0 +1,21 @@
+table{
+	width:100%;
+	height:100%;
+}
+p{
+	padding:7px;
+	text-align:center;
+	color:#6b6b6b;
+	font-family:Candara,century,corbel;
+	font-size:20pt;
+}
+td{padding:7px;
+	text-align:center;
+	
+}
+a{
+	text-decoration:none;
+}
+body{
+	background-color:FBF7F7;
+}
