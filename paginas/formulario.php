@@ -1,35 +1,20 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="../css/formulario.css">
+<body>
 
+<form action="ejemplo.php" method="get">
+<legend class="datos">Datos Usuario</legend>
 
-<form method="post" action="agregar.php">
-<fieldset>
-<legend> Ingrese los datos del proyecto</legend>
-<p>
-<label> Escriba el nombre del proyecto:
-<input type="text" name="nombre" />
-</label>
-</p>
-<p>
-<label>Escriba la descripcion del proyecto:
-<textarea name="Descripcion" cols="30" rows="5"></textarea>
-</label>
-</p>
-<p>
-<label>Escriba el ODS que se esta trabajando:
-<textarea name="ODS" cols="30" rows="5"></textarea>
-</label>
-</p>
-<p>
-<label> Escriba el costo del proyecto:
-<input type="text" name="costo" />
-</label>
-</p>
-<p>
-<label> Escriba el tiempo que tomara/tomo implementar el proyecto:
-<input type="text" name="tiempo" />
-</label>
-</p>
-<p>
-<input type="submit" value="enviar"/>
-</p>
-</fieldset>
+  <p class="name">Nombre:</p>
+  <p class="gmail">Correo Electronico:</p>
+  
+ <legend class="datos2">Datos Propuesta</legend>
+  <p class="prop">Ingrese Nombre propuesta: <input class="propuesta" type="text" name="propuesta"></p>
+  <p class="ods">ODS <input type="text" name="ods"></p>
+  <p class="des">Descripción<input type="text" name="descripcion"></p>
+  <p class="pro">Progreso<input type="text" name="progreso"></p>
 </form>
+
+</body>
+</html>

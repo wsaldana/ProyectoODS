@@ -15,7 +15,7 @@ class Usuario{
 		$this->nombre = $nombre;
 	}
 	public function getNombre() {
-		return $nombre;
+		return $this->nombre;
 	}
 	// getters y setters de correo
 	function setCorreo($correo) {

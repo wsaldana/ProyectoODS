@@ -14,7 +14,7 @@
 			<br>
 		<input type="submit" name="btn" value="LOGIN">
 					
-		<p>Registrate aqui</p><a href="registro.html">register</a>
+		<p>Registrate aqui:</p><a href="registro.php">Registro</a>
 		<br><br>
 		<a href="quienes.html">Quienes Somos</a>
 		<?php
@@ -36,7 +36,7 @@
 							?>
 							<script>
 								alert("Ingreso correcto...");
-								location.href="#";
+								location.href="Formulario.php";
 							</script>
 							<?php
 						}else{

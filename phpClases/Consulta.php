@@ -15,7 +15,7 @@ class Consulta{
 		
 	public function generarIDU(){	
 		$id='U0';
-			$n=mysql_query("SELECT * FROM usuario",$cn);
+			$n=mysql_query("SELECT * FROM usuario",$this->con);
 			$n1=mysql_num_rows($n);
 			$id1=$id.$n1;
 			
@@ -24,17 +24,28 @@ class Consulta{
 	
 	public function generarIDP(){	
 		$id='U0';
-			$n=mysql_query("SELECT * FROM propuesta",$cn);
+			$n=mysql_query("SELECT * FROM propuesta",$this->con);
 			$n1=mysql_num_rows($n);
 			$id1=$id.$n1;
 			
 			return $id1;
 	}
 	public function insertarUsuario(){
-		//$rs=mysql_query("INSERT INTO usuario VALUES(generarIDU(),$usuario->getNombre(),$usuario->getCorreo(),$usuario->getContrasena())",Conectar->getCn());
+		$nom=$this->usuario->getNombre();
+		$cor=$this->usuario->getCorreo();
+		$cont=$this->usuario->getContrasena();
+		$rs=mysql_query("INSERT INTO usuario VALUES(generarIDU(),$nom,$cor,$cont)",$this->con);
+		if($rs){
+			return true;
+		}
+		return false;
 	}
 	public function insertarPropuesta(){
-		//$rs=mysql_query("INSERT INTO usuario VALUES(generarIDP(),$usuario->getNombre(),$usuario->getCorreo(),$usuario->getContrasena())",Conectar->getCn());
+		$nom=$this->propuesta->getNombre();
+		$ods=$this->propuesta->getOds();
+		$des=$this->propuesta->getDescripcion();
+		$pro=$this->propueta->getProgreso();
+		$rs=mysql_query("INSERT INTO usuario VALUES(generarIDP(),$nom,$ods,$des,$pro)",$this->con);
 	}
 	public function seleccionarUsuario(){
 		$cor=$this->usuario->getCorreo();

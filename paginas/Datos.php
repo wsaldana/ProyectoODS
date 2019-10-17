@@ -32,7 +32,7 @@
 							
 			<input type="submit"  id="x" name="btn" VALUE="BUSCAR" />
 			<?php
-				include('phpClases/Conectar.php');
+				include('../phpClases/Conectar.php');
 				$con=new Conectar();
 				$cn1=$con->getCn();
 				if(isset($_POST['btn'])){
