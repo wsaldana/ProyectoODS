@@ -1,0 +1,59 @@
+*{
+	background-color:#6AFA8C;
+}
+
+.datos{
+	text-align:left;
+	text-indent:25px;
+	border: green 3px solid;
+	margin:10px 450px;
+}
+
+.datos2{
+	text-align:left;
+	text-indent:25px;
+	border: green 3px solid;
+	margin:80px 450px 0px;
+}
+
+.name{
+	text-align:left;
+	text-indent:25px;
+	border: green 3px solid;
+	margin:10px 480px;
+}
+
+.gmail{
+	text-align:left;
+	text-indent:25px;
+	border: green 3px solid;
+	margin:10px 480px;
+}
+
+.prop{
+	text-align:left;
+	text-indent:25px;
+	border: green 3px solid;
+	margin:10px 480px;
+}
+
+.ods{
+	text-align:left;
+	text-indent:25px;
+	border: green 3px solid;
+	margin:10px 480px;
+}
+
+.des{
+	text-align:left;
+	text-indent:25px;
+	border: green 3px solid;
+	margin:10px 480px;
+}
+
+.pro{
+	text-align:left;
+	text-indent:25px;
+	border: green 3px solid;
+	margin:10px 480px;
+}
