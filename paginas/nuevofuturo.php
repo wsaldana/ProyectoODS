@@ -6,6 +6,7 @@
 	</head>
 	<h1>Login</h1>
 	<body>
+	<img src="2.png" class="avatar">
 	<form method="POST">
 		<p>Username:</p>
 			<input type="text" name="user">
