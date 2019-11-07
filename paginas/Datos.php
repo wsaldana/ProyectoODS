@@ -46,7 +46,9 @@
 									<legend><?php echo $a[1]; ?></legend>
 									ODS: <p><?php echo $a[2]; ?></p>
 									DETALLES: <p><?php echo $a[3]; ?></p>
-									PROGRESO: <p><?php echo $a[4]; ?></p>
+									PROGRESO: <div class="bar">
+													<div class="minibar" style="height:24px;width:24px"></div>
+											</div>
 								</fieldset>
 								<br>
 							<?php
