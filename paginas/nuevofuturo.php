@@ -12,7 +12,7 @@
                 <input type="text" name="user" placeholder="Enter Username">
                 <p>Password</p>
                 <input type="password" name="user_pass" placeholder="Enter Password">
-                <input type="submit" name="btn" value="Login">
+                <input type="submit" name="btn" value="LOGIN">
                 
                 <?php
 			    require("../phpClases/Consulta.php");
