@@ -4,7 +4,7 @@
 		<link rel="stylesheet" type="text/css" href="css/principal.css">
 		<meta charset="UTF-8"/>
 	</head>
-	<body>
+	<body style="background-image: url('imagenes/3.jpg');">
 	<table>
 		<td><a href=""><img src="https://i2.wp.com/www.un.org/sustainabledevelopment/es/wp-content/uploads/sites/3/2016/01/S_SDG_Icons-01-01.jpg?zoom=1.25&w=1350';" height="200px" width="200px"/></a></td>
 		
