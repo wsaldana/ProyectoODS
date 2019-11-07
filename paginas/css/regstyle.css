@@ -10,6 +10,15 @@ body{
 	
 	
 }
+afuera{
+	height: 24px;
+	width:500px;
+	border:solid 1px #000;
+}
+adentro{
+	height: 24px;
+	border:solid 1px #000;
+}
 /* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
