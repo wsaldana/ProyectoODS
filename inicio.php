@@ -8,7 +8,7 @@
 	<body>
 		<?php
 			include('paginas/menu.php');
-			include('paginas/principal.html');
+			include('paginas/principal.php');
 			include('paginas/pie.html');
 		?>
 	</body>
