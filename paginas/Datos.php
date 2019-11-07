@@ -3,7 +3,7 @@
 	<head>
 		<link rel="stylesheet" href="css/regstyle.css">
 		<meta charset="ISO-8859-1"/>
-	<body>
+	<body style="background-image: url('imagenes/3.jpg');">
 		<table>
 			<tr>
 				<FORM method="POST"> 
