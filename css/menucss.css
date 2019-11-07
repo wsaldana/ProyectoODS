@@ -1,5 +1,8 @@
 body{
-	background-color:FBF7F7;
+	background-color:white;
+}
+.me{
+  background-color:lightblue;
 }
 #cssmenu,
 #cssmenu ul,

@@ -6,14 +6,14 @@
    <meta charset="UTF-8"/>
 </head>
 <body>
-<table align="center" width="100%">
+<table align="center" width="100%" class="me">
 <tr>
 <td width="12%">
 </td>
 <td>
 <img src="imagenes/logo.jpg" height="100px" width="300px">
 </td>
-<td width="10%">
+<td width="10px">
 </td>
 <td height="90px">
 <div id='cssmenu'>
