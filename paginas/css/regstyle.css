@@ -9,13 +9,18 @@ body{
 	text-align: center;
 }
 .afuera {
+	margin: auto;
 	height: 24px;
 	width:500px;
+	text-align: center;
 	border:solid 1px #000;
 }
 .adentro {
+	color: white;
+	text-align: center;
 	height: 24px;
 	border:solid 1px #000;
 	background: red;
 }
+
 

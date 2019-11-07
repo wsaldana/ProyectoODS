@@ -47,7 +47,7 @@
 									ODS: <p><?php echo $a[2]; ?></p>
 									DETALLES: <p><?php echo $a[3]; ?></p>
 									PROGRESO: <p><div class="afuera">
-											<div class="adentro" style="width:30%">30%</div>
+											<div class="adentro" style="width:<?php echo $a[4];?>"><?php echo $a[4];?></div>
 											</div><p>
 								</fieldset>
 								<br>
