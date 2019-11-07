@@ -7,17 +7,6 @@ body{
 	width: auto;
 	height: auto;
 	text-align: center;
-	
-	
 }
-.afuera {
-	height: 24px;
-	width:500px;
-	border:solid 1px #000;
-	background: grey;
-}
-.adentro {
-	height: 24px;
-	border:solid 1px #000;
-	background: red;
-}
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.w3-blue,.w3-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
