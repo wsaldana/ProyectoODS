@@ -1,19 +1,23 @@
 <!DOCTYPE html>
     <html>
     <head>
-    <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta charset="UTF-8">
+    </head>
     <body style="background-image: url('imagenes/5.jpg');">
         <div class="loginbox">
-        <img src="imagenes/2.png" class="avatar">
-            <h1>
+            <img src="imagenes/2.png" class="avatar">
+            
             <form method="POST">
+                <h1>
                 <p>Username</p>
-                <input type="text" name="user" placeholder="Enter Username">
+                <input type="text" name="user" placeholder="Nombre de usuario">
                 <p>Password</p>
-                <input type="password" name="user_pass" placeholder="Enter Password">
+                <input type="password" name="user_pass" placeholder="Contraseña">
                 <input type="submit" name="btn" value="LOGIN">
-                
+                <input type="submit" name="btn" value="REGISTRO">
+                </h1>
                 <?php
 			    require("../phpClases/Consulta.php");
 			    require("../phpClases/Usuario.php");
@@ -33,7 +37,7 @@
                                 ?>
                                 <script>
                                     alert("Ingreso correcto...");
-                                    location.href="Formulario.php";
+                                    location.href="Formulario.php?id=<?php echo $usuario->getNombre();?>&cor=<?php echo $usuario->getCorreo();?>";
                                 </script>
                                 <?php
                             }else{
@@ -50,11 +54,16 @@
                                 </script>
                             <?php
                             }
-				        }
+				        }else if($_POST['btn']=="REGISTRO"){
+                            ?>
+                                <script>
+                                    location.href="registro.php"
+                                </script>
+                            <?php
+                        }
 			        }
 		            ?>
             </form>
-            </h1>
         </div>
     </body>
     </head>
