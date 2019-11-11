@@ -11,21 +11,25 @@
             
             <form method="POST">
                 <h1>
-                <p>Username</p>
-                <input type="text" name="user" placeholder="Nombre de usuario">
+                <p>E-Mail</p>
+                <input type="text" name="usuario" placeholder="Correo electronico">
                 <p>Password</p>
-                <input type="password" name="user_pass" placeholder="Contraseña">
+                <input type="password" name="password" placeholder="Contraseña">
                 <input type="submit" name="btn" value="LOGIN">
                 <input type="submit" name="btn" value="REGISTRO">
                 </h1>
                 <?php
 			    require("../phpClases/Consulta.php");
 			    require("../phpClases/Usuario.php");
-			    require("../phpClases/Propuesta.php");
+                require("../phpClases/Propuesta.php");
+                require("../phpClases/Capturar.php");
 			    if(isset($_POST['btn'])){
+                    $capt=new Capturar();
 				    if($_POST['btn']=="LOGIN"){
-					    $us=$_POST['user'];
-					    $pas=$_POST['user_pass'];
+                        $capt->setUsuario();
+                        $capt->setPassword();
+					    $us=$capt->getUsuario();
+					    $pas=$capt->getPassword();
 
 					    $usuario1=new Usuario("",$us,"");
 					    $cons=new Consulta($usuario1,new Propuesta("","","",0));

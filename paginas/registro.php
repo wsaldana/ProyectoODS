@@ -11,25 +11,34 @@
 			include('../phpClases/Usuario.php');
 			include('../phpClases/Propuesta.php');
 			require('../phpClases/Consulta.php');
+			require("../phpClases/Capturar.php");
 		?>
 		<div class="loginbox">
 			<img src="imagenes/2.png" class="avatar">
 			<h1>Registrate</h1>
 			<p>Username:</p>
-				<input type="text" name="user">
+				<input type="text" name="usuario">
 			<p>Password:</p>
-				<input type="text" name="pass">
+				<input type="text" name="password">
 			<p>Email:</p>
-				<input type="text" name="email">
+				<input type="text" name="correo">
 			<br>
 				<input type="submit" name="btn" value="REGISTRARSE">	
 			<br><br><a href="../inicio.php">Regresar al Lobby</a></br>
 		</div>
 		<?php
 			if(isset($_POST['btn'])){
+				echo "simon";
+				$capt=new Capturar();
 				if($_POST['btn']=="REGISTRARSE"){
-					$user=new Usuario($_POST['user'],$_POST['email'],$_POST['pass']);
-					echo $user->getNombre();
+					echo "tambien";
+					$capt->setUsuario();
+					$capt->setCorreo();
+					$capt->setPassword();
+					$us=$capt->getUsuario();
+					$cor=$capt->getCorreo();
+					$pass=$capt->getPassword();
+					$user=new Usuario($us,$cor,$pass);
 					$consulta=new Consulta($user,new Propuesta("","","",0));
 					$insertar=$consulta->insertarUsuario();
 					if($insertar){

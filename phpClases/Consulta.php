@@ -34,18 +34,18 @@ class Consulta{
 		$nom=$this->usuario->getNombre();
 		$cor=$this->usuario->getCorreo();
 		$cont=$this->usuario->getContrasena();
-		$rs=mysql_query("INSERT INTO usuario VALUES(generarIDU(),$nom,$cor,$cont)",$this->con);
-		if($rs){
-			return true;
-		}
-		return false;
+		$id=$this->generarIDU();
+		$rs=mysql_query("INSERT INTO usuario VALUES('$id','$nom','$cor','$cont')",$this->con);
+		return $rs;
 	}
 	public function insertarPropuesta(){
 		$nom=$this->propuesta->getNombre();
 		$ods=$this->propuesta->getOds();
 		$des=$this->propuesta->getDescripcion();
 		$pro=$this->propueta->getProgreso();
-		$rs=mysql_query("INSERT INTO usuario VALUES(generarIDP(),$nom,$ods,$des,$pro)",$this->con);
+		$id=$this->generarIDP();
+		$rs=mysql_query("INSERT INTO usuario VALUES('$id','$nom','$ods','$des','$pro')",$this->con);
+		return $rs;
 	}
 	public function seleccionarUsuario(){
 		$cor=$this->usuario->getCorreo();
