@@ -23,7 +23,7 @@ class Consulta{
 	}
 	
 	public function generarIDP(){	
-		$id='U0';
+		$id='P0';
 			$n=mysql_query("SELECT * FROM propuesta",$this->con);
 			$n1=mysql_num_rows($n);
 			$id1=$id.$n1;
@@ -42,9 +42,10 @@ class Consulta{
 		$nom=$this->propuesta->getNombre();
 		$ods=$this->propuesta->getOds();
 		$des=$this->propuesta->getDescripcion();
-		$pro=$this->propueta->getProgreso();
+		$pro=$this->propuesta->getProgreso();
 		$id=$this->generarIDP();
-		$rs=mysql_query("INSERT INTO usuario VALUES('$id','$nom','$ods','$des','$pro')",$this->con);
+		echo $id.$nom.$ods.$des.$pro;
+		$rs=mysql_query("INSERT INTO propuesta VALUES('$id','$nom','$ods','$des','$pro')",$this->con);
 		return $rs;
 	}
 	public function seleccionarUsuario(){
@@ -56,6 +57,10 @@ class Consulta{
 		$usuario1->setCorreo($result[2]);
 		$usuario1->setContrasena($result[3]);
 		return $usuario1;
+	}
+
+	public function setPropuesta($p){
+		$this->propuesta=$p;
 	}
 	/*
 	public function seleccionarPropuesta(){

@@ -10,7 +10,7 @@
 		<fieldset> 
 			<input type=hidden name=ie value=UTF-8 /> 
 			<input type=hidden name=oe value=UTF-8 /> 
-					<select name="txtods">
+				<select name="txtods">
 					<option value="pobreza">Pobreza</option>
 					<option value="hambre">Hambre</option>
 					<option value="salud">Salud</option>
