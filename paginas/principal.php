@@ -42,7 +42,7 @@
 	<td><p style="color:white">Industria, innovacion e infraetructura</p></td>
 	</tr>
 	<tr>
-		<td><a href="paginas/Datos.php?ods=desiguadades"><img src="https://i1.wp.com/www.un.org/sustainabledevelopment/es/wp-content/uploads/sites/3/2015/09/S_SDG_Icons-01-10-1.jpg?fit=466%2C466&ssl=1';" height="200px" width="200px"/></a></td>
+		<td><a href="paginas/Datos.php?ods=desigualdades"><img src="https://i1.wp.com/www.un.org/sustainabledevelopment/es/wp-content/uploads/sites/3/2015/09/S_SDG_Icons-01-10-1.jpg?fit=466%2C466&ssl=1';" height="200px" width="200px"/></a></td>
 		
 		<td><a href="paginas/Datos.php?ods=asentamientos"><img src="https://i0.wp.com/www.un.org/sustainabledevelopment/es/wp-content/uploads/sites/3/2016/01/S_SDG_Icons-01-11.jpg?zoom=1.25&w=1350';" height="200px" width="200px"/></a></td>
 		
