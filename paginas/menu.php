@@ -21,7 +21,7 @@
    <li class='active'><a href="principal.html" target="principal">Inicio</a></li>
    <li><a href="paginas/nuevofuturo.php" target="principal">Login</a></li>
    <li><a href="paginas/Informacion.html" target="principal">Información</a></li>
-   <li><a href="paginas/Datos.php" target="principal">Datos</a></li>
+   <li><a href="paginas/Datos.php?ods=pobreza" target="principal">Datos</a></li>
    <li><a href="paginas/quienes.html" target="principal">&iquest;Quienes Somos?</a></li>
    <li><a href="paginas/contacto.html" target="principal">Contacto</a></li>
 </ul>
