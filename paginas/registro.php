@@ -17,14 +17,14 @@
 			<img src="imagenes/2.png" class="avatar">
 			<h1>Registrate</h1>
 			<p>Username:</p>
-				<input type="text" name="usuario">
+				<input type="text" name="usuario" required>
 			<p>Password:</p>
-				<input type="text" name="password">
+				<input type="text" name="password" required minlength=5>
 			<p>Email:</p>
-				<input type="text" name="correo">
-			<br>
+				<input type="email" name="correo" required multiple>
+			<br><br><br>
 				<input type="submit" name="btn" value="REGISTRARSE">	
-			<br><br><a href="../inicio.php">Regresar al Lobby</a></br>
+			<br><a href="../inicio.php">Regresar al Lobby</a><br>
 		</div>
 		<?php
 			if(isset($_POST['btn'])){
