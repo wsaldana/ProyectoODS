@@ -39,43 +39,29 @@
 				if(isset($_POST['btn'])){
 					if($_POST['btn']=="BUSCAR"){
 						$ods=$_POST['txtods'];
-						$rs=mysql_query("SELECT * FROM propuesta WHERE ods='$ods'",$cn1);
-						$n=mysql_num_rows($rs);
-						while($a=mysql_fetch_array($rs)){
-							?>
-								<fieldset>
-									<legend><?php echo $a[1]; ?></legend>
-									ODS: <p><?php echo $a[2]; ?></p>
-									DETALLES: <p><?php echo $a[3]; ?></p>
-									PROGRESO: <p><div class="afuera">
-											<div class="adentro" style="width:<?php echo $a[4];?>"><?php echo $a[4];?></div>
-											</div><p>
-								</fieldset>
-								<br>
-							<?php
-						}
 					}
 				}else{
 					$ods=$_GET['ods'];
-					$rs=mysql_query("SELECT * FROM propuesta WHERE ods='$ods'",$cn1);
-					$n=mysql_num_rows($rs);
-					while($a=mysql_fetch_array($rs)){
-						?>
-							<fieldset>
-								<legend><?php echo $a[1]; ?></legend>
-								ODS: <p><?php echo $a[2]; ?></p>
-								DETALLES: <p><?php echo $a[3]; ?></p>
-								PROGRESO: <p><div class="afuera">
-										<div class="adentro" style="width:<?php echo $a[4];?>"><?php echo $a[4];?></div>
-										</div><p>
-							</fieldset>
-							<br>
-						<?php
-					}
+				}
+
+				$rs=mysql_query("SELECT * FROM propuesta WHERE ods='$ods'",$cn1);
+				$n=mysql_num_rows($rs);
+				while($a=mysql_fetch_array($rs)){
+					?>
+						<fieldset>
+							<legend><?php echo $a[1]; ?></legend>
+							ODS: <p><?php echo $a[2]; ?></p>
+							DETALLES: <p><?php echo $a[3]; ?></p>
+							<p><a href="archivos/<?php echo $a[0];?>.pdf">DESCARGAR PDF</a></p>
+							PROGRESO: <p><div class="afuera">
+									<div class="adentro" style="width:<?php echo $a[4];?>"><?php echo $a[4];?></div>
+									</div><p>
+						</fieldset>
+						<br>
+					<?php
 				}
 				
 			?>
-			</font> 
 		</fieldset> 
 		</FORM>
 			</tr>
